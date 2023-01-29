@@ -435,7 +435,7 @@ img.carousel-image {
 #tag-holder {
     display: flex;
     justify-content: center;
-    gap: 25px;
+    gap: 2vw;
 }
 
 .tag {
@@ -486,7 +486,7 @@ img.carousel-image {
     top: 5px;
     width: 2px;
     background-color: rgba(var(--text-color));
-    transition-duration: 200ms
+    transition-duration: 200ms;
 }
 
 .close:before {
@@ -504,12 +504,12 @@ img.carousel-image {
 .tag.active:hover .close::before,
 .tag.active:hover .close::after {
     display: inline;
-    background-color: rgba(var(--footer-text-color))!important
+    background-color: rgba(var(--footer-text-color));
 }
 
 #view-holder {
     display: flex;
-    gap: 25px;
+    gap: 2vw;
     justify-content: space-between;
 }
 
@@ -810,5 +810,12 @@ img.carousel-image {
         justify-content: flex-start;
         padding-inline: 20px;
         gap: 3em
+    }
+    .tag.active {
+        color: rgba(var(--text-color))!important;
+    }
+    .tag.active span.close::before,
+    .tag.active span.close::after {
+        background-color: rgba(var(--text-color))!important;
     }
 }
