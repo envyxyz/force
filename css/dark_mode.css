@@ -1,0 +1,102 @@
+:root {
+    --main-bg: rgb(21 21 21);
+    --text-color: 205, 205, 205;
+    --bg: 18, 18, 18;
+    --shadow: transparent;
+    --footer-height: 0;
+    --footer-color: 30, 30, 30;
+    --footer-text-color: 155, 155, 155;
+}
+
+* {
+    color-scheme: dark;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 3px;
+}
+
+::-webkit-scrollbar-button {
+    display: none;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #646464;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: #000;
+}
+
+::-webkit-scrollbar-thumb {
+    height: 50px;
+    background-color: #646464;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: #646464;
+}
+
+::-webkit-resizer {
+    background-color: #666;
+}
+
+.nav-link a,
+#currency,
+#close,
+.s-icon,
+input#search-input,
+input#search-input::placeholder,
+.product-name,
+.product-price {
+    color: rgba(var(--text-color));
+    fill: rgba(var(--text-color))
+}
+
+select option {
+    color: #000
+}
+
+.logo-img {
+    filter: drop-shadow(0 75px 0 rgba(var(--text-color)));
+    translate: 0 -75px
+}
+
+.carousel-image:not([src*="grid"], [src*="merch"]) {
+    filter: drop-shadow(0 50em 0 rgba(var(--text-color)))!important;
+    translate: 0 -50em
+}
+
+.carousel-image,
+.product-img img {
+    filter: brightness(80%) contrast(110%)!important
+}
+
+div[data-category]:hover::before {
+    backdrop-filter: blur(2px);
+    text-shadow: 0 0 20px rgb(0 0 0 / 55%);
+}
+
+.social-link-icon:hover {
+    fill: rgb(var(--text-color));
+}
+
+.tag.active {
+    background-color: #000;
+}
+
+.nav-link>a>img {
+    filter: invert(1)
+}
+
+#view-holder div img {
+    height: 2em;
+    filter: invert(25%);
+    transition-duration: 200ms
+}
+
+#view-holder div:hover img {
+    filter: invert(20%)
+}
