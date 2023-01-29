@@ -58,7 +58,7 @@
                 <div class="nav-link"><a href="./index.html">Home</a></div>
                 <div class="nav-link"><a href="./shop.html">Shop</a></div>
                 <div class="nav-link"><a href="./contact-us.html">Contact Us</a></div>
-                <div class="nav-link" onclick="windowOpen()">
+                <div class="nav-link" onclick="windowOpen(cartWindow)">
                     <a><img src="./assets/icons/cart.png" alt="cart.png"></a>
                 </div>
             </div>
@@ -156,11 +156,11 @@
                 </div>
             </div>
         </div>
-        <div id="pop-up">
+        <div id="pop-up" class="cart">
             <div class="window">
                 <div class="window-header">
                     <div class="header-text">Your Cart:</div>
-                    <div class="header-close"><span id="close" onclick="windowClose()" class="cart-close" style="user-select: none">✕</span>
+                    <div class="header-close"><span id="close" onclick="windowClose(cartWindow)" class="cart-close" style="user-select: none">✕</span>
                     </div>
                 </div>
                 <div class="window-content"></div>
@@ -169,7 +169,7 @@
                     <div class="footer-total">--</div>
                 </div>
             </div>
-            <div class="close-area" onclick="windowClose()"></div>
+            <div class="close-area" onclick="windowClose(cartWindow)"></div>
         </div>
         <div id="footer">
             <div id="terms">
