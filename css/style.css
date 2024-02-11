@@ -808,7 +808,7 @@ img.carousel-image {
     #info {
         justify-content: flex-start;
         padding-inline: 20px;
-        gap: 3em
+        gap: 3em;
     }
     .tag.active {
         color: rgba(var(--text-color))!important;
